@@ -12,7 +12,9 @@ public class springTest_04 {
     @Test
     public void userTest(){
         ApplicationContext context = new ClassPathXmlApplicationContext("UserConfig.xml");
-        User user = context.getBean("user",User.class);
+        User user = context.getBean("user2",User.class);
+        User user2 = context.getBean("user2",User.class);
         System.out.println(user.toString());
+        System.out.println(user==user2);
     }
 }
