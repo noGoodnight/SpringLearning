@@ -11,7 +11,7 @@ public class springTest_04 {
 
     @Test
     public void userTest(){
-        ApplicationContext context = new ClassPathXmlApplicationContext("userConfig.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("UserConfig.xml");
         User user = context.getBean("user",User.class);
         System.out.println(user.toString());
     }
