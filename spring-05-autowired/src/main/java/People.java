@@ -1,9 +1,11 @@
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.annotation.Resource;
+
 public class People {
-    @Autowired(required = false)
-    private Cat cat;
     @Autowired
+    private Cat cat;
+    @Resource
     private Dog dog;
     private String name;
 

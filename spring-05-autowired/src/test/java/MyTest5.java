@@ -8,7 +8,7 @@ public class MyTest5 {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         People people = context.getBean("people", People.class);
         people.getDog().shout();
-//        people.getCat().shout();
+        people.getCat().shout();
         System.out.println(people.toString());
     }
 }
